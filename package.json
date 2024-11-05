@@ -6,19 +6,37 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write ."
   },
   "dependencies": {
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "@ant-design/nextjs-registry": "^1.0.1",
+    "@azure/ai-form-recognizer": "^5.0.0",
+    "@azure/core-auth": "^1.9.0",
+    "@opentelemetry/api-logs": "^0.54.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.54.1",
+    "@opentelemetry/instrumentation": "^0.54.1",
+    "@opentelemetry/sdk-logs": "^0.54.1",
+    "@traceloop/instrumentation-openai": "^0.11.3",
+    "@vercel/blob": "^0.25.1",
+    "@vercel/otel": "^1.10.0",
+    "antd": "^5.21.6",
+    "next": "^14.2.16",
+    "openai": "^4.71.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
+    "@types/pdf-parse": "^1.1.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
