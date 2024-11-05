@@ -5,6 +5,8 @@ import { askOpenAI, getZodBasedSystemPrompt } from "@/lib/structured-ai";
 import { tracer } from "@/instrumentation.node";
 
 export const runtime = "nodejs"; // Ensure Node.js runtime
+export const maxDuration = 120;
+
 
 const Result = z.object({
   amount: z.number().describe("Amount of the invoice"),
